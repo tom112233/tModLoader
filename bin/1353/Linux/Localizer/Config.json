@@ -1,0 +1,29 @@
+{
+  "AutoImport": true,
+  "ImportLdstr": true,
+  "LdstrImporter": "Cecil",
+  "ImporBasictAfterSetupContent": true,
+  "AutoImportType": "All",
+  "ShowUI": true,
+  "LogLevel": "Info",
+  "RebuildTooltips": true,
+  "RebuildTooltipsOnce": true,
+  "ModListMirror": [
+    "mirror.sgkoi.dev",
+    "mirror7.sgkoi.dev",
+    "mirror8.sgkoi.dev",
+    "mirror5.sgkoi.dev"
+  ],
+  "ModDownloadMirror": [
+    "mirror.sgkoi.dev",
+    "mirror7.sgkoi.dev",
+    "mirror8.sgkoi.dev",
+    "mirror5.sgkoi.dev"
+  ],
+  "ModDescMirror": [
+    "mirror.sgkoi.dev",
+    "mirror7.sgkoi.dev",
+    "mirror8.sgkoi.dev",
+    "mirror5.sgkoi.dev"
+  ]
+}
