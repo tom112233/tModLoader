@@ -40,6 +40,20 @@ stop() {
    exit
 }
 
+restart() {
+   if pgrep -u $USERNAME -f $SERVICE > /dev/null ; then
+       echo "Stopping $SERVICE "
+   else
+       echo "$SERVICE is not running!"
+   fi
+
+   screen -p 0 -S $SCNAME -X eval 'stuff "say SERVER SHUTTING DOWN IN 10 SECONDS. "\015'
+   sleep 10
+   screen -p 0 -S $SCNAME -X eval 'stuff "exit"\015'
+   sleep 10   
+   start
+}
+
 save() {
    echo 'World data saving...'
    screen -p 0 -S $SCNAME -X eval 'stuff "say World saveing..."\015'
@@ -69,6 +83,9 @@ case "$1" in
        ;;
    status)
        status
+       ;;
+   restart)
+       restart
        ;;
    *)
        echo  $"Usage: $0 {start|stop|status|save}"
